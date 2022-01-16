@@ -9,6 +9,7 @@ import UseEffectOnlyOnce from './Components/UseEffectOnlyOnce'
 import UseEffectForAPIs from './Components/UseEffectForAPIs';
 import UseContextCompo from './Components/UseContextCompo';
 import UseReducerCounter from './Components/UseReducerCounter';
+import UseReducerWithContext from './Components/UseReducerWithContext';
 
 export const userContext = React.createContext()
 export const productContext = React.createContext()
@@ -22,7 +23,9 @@ function App() {
         </productContext.Provider>
       </userContext.Provider> */}
         
-      <UseReducerCounter/>
+      {/* <UseReducerCounter/> */}
+
+      <UseReducerWithContext />
     </div>
   );
 }
